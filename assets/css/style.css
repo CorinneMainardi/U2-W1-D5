@@ -268,3 +268,38 @@ header .scroll .navButton {
   width: 60px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .lastNews {
+    padding: 0 2rem;
+  }
+
+  .news {
+    flex-basis: 45%;
+  }
+
+  .containerHh {
+    background-color: #ffc017;
+  }
+  /* provato responsive, fun<iona in parte*/
+  .container2 {
+    flex-direction: column;
+  }
+
+  .aside {
+    order: 1;
+  }
+
+  .allArticles {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .news {
+    flex-basis: 100%;
+  }
+
+  .containerHh {
+    background-color: #ffc017;
+  }
+}
