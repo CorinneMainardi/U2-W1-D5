@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.containerHh {
+  background-color: #ffc017;
+}
+header {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  align-items: center;
+  border-bottom: 1.5px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+header > img {
+  width: 150px;
+}
+header > nav > a {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+}
+header.scroll {
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+
+header.scroll nav a {
+  color: black;
+}
+
+header .scroll .navButton {
+  background-color: #1a8917;
+  color: white;
+}
+.scroll-background {
+  background-color: white; /* Cambia il background del containerHh */
+}
+.navButton {
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  min-width: 128px;
+  display: inline-block;
+}
+
+.hero {
+  width: 80%;
+  margin-inline: auto;
+  border-bottom: 1.5px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroText h1 {
+  font-family: "Spectral", serif;
+  font-size: 6rem;
+  font-weight: 600;
+}
+.hero p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-block: 2rem;
+  margin-right: 35%;
+  color: rgb(46, 46, 46);
+}
+.heroText button {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 50px;
+  padding: 10px 50px;
+  font-size: 18px;
+  border: none;
+}
+.container1 {
+  border-bottom: 1.5px solid #e0e0e0;
+}
+
+.lastNews {
+  width: 95%;
+  margin-inline: auto;
+  display: flex;
+  line-height: 1.6rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-block: 30px;
+  padding: 0 12rem;
+}
+
+.news {
+  flex-basis: 30%;
+  margin-bottom: 35px;
+}
+
+.newsAut {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsImg {
+  border-radius: 25%;
+  width: 16px;
+  height: 16px;
+}
+.in {
+  color: #757c85;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.NewsNr {
+  font-size: 25px;
+  color: #e0e0e0;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: -3.8rem;
+}
+
+.news p {
+  margin-right: 0px;
+
+  font-weight: 500;
+}
+.news h6 {
+  margin-top: 10px;
+  font-size: 18;
+  font-weight: bold;
+}
+
+.data {
+  font-size: 0.9rem;
+  color: grey;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.trend {
+  align-items: center;
+  gap: 10px;
+  margin-left: 180px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.trend h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: normal;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+.allArticles {
+  width: 60%;
+  margin: 20px 0;
+  margin-top: 80px;
+}
+.divArticle {
+  display: flex;
+  justify-content: space-between;
+}
+.articleText {
+  width: 60%;
+}
+.nameAuthor {
+  font-size: 16px;
+  font-weight: 600;
+}
+.imgAuthors {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.articleText p + h6 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.descriptionArt {
+  margin-block: 15px;
+  font-size: 18px;
+  color: #757c85;
+}
+.dateArt {
+  /* margin-top: 15px; */
+  color: #757c85;
+  font-size: 14px;
+  position: relative;
+  font-weight: 500;
+}
+.dateArt span {
+  position: absolute;
+  right: 20px;
+}
+.articleImg > img {
+  width: 250px;
+}
+.aside {
+  width: 30%;
+  margin: 20px 0;
+  margin-top: 80px;
+}
+.firstAside {
+  border-bottom: 2px solid #e0e0e0;
+}
+.firstAside > h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+}
+.flexFirstA {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+.flexFirstA a {
+  border: 1px solid #e0e0e0;
+  color: #757c85;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.flexSecondA {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.flexSecondA a {
+  color: #757c85;
+  text-decoration: none;
+  font-size: 16px;
+  width: 60px;
+  font-weight: 500;
+}
