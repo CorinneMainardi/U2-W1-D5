@@ -70,7 +70,9 @@ header div > nav > a {
   justify-content: space-between;
   width: 90%;
 }
-
+.heroText {
+  margin-top: 4rem;
+}
 .heroText h1 {
   font-family: "Spectral", serif;
   font-size: 6rem;
