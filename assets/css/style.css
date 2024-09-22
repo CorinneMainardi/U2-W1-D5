@@ -278,6 +278,15 @@ header div > nav > a {
   width: 60px;
   font-weight: 500;
 }
+@media (max-width: 792px) {
+  .marginHh {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+  .marginHh > img {
+    width: 100px;
+  }
+}
 @media (max-width: 768px) {
   .lastNews {
     padding: 0 2rem;
