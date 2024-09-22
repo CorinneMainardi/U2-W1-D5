@@ -303,12 +303,18 @@ header div > nav > a {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .news {
     flex-basis: 100%;
   }
 
   .containerHh {
     background-color: #ffc017;
+  }
+  .heroImg {
+    display: none;
+  }
+  .navHidden {
+    display: none;
   }
 }
