@@ -286,16 +286,15 @@ header div > nav > a {
     flex-basis: 45%;
   }
 
-  .containerHh {
-    background-color: #ffc017;
-  }
-  /* provato responsive, fun<iona in parte*/
+  /* provato responsive, funziona in parte*/
   .container2 {
     flex-direction: column;
   }
 
   .aside {
     order: 1;
+    width: 75vw;
+    padding-inline: 10px;
   }
 
   .allArticles {
@@ -308,9 +307,6 @@ header div > nav > a {
     flex-basis: 100%;
   }
 
-  .containerHh {
-    background-color: #ffc017;
-  }
   .heroImg {
     display: none;
   }

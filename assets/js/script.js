@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navButton = document.querySelector(".navButton");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= heroHeight) {
+    const heroHeightNew = 366;
+    if (window.scrollY >= heroHeightNew) {
       header.id = "scroll";
       navButton.id = "navButton";
     } else {
