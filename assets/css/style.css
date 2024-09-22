@@ -8,16 +8,8 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.containerHh {
-  background-color: #ffc017;
-}
+
 header {
-  width: 80%;
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-  min-height: 100px;
-  align-items: center;
   border-bottom: 1.5px solid black;
   position: sticky;
   top: 0;
@@ -26,31 +18,34 @@ header {
   position: fixed;
   right: 0;
   left: 0;
+  background-color: #ffc017;
 }
-header > img {
+.marginHh {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+header > div > img {
   width: 150px;
 }
-header > nav > a {
+header div > nav > a {
   text-decoration: none;
   color: black;
   padding: 12px;
 }
-header.scroll {
+#scroll {
   background-color: white;
   transition: background-color 0.5s ease;
 }
 
-header.scroll nav a {
-  color: black;
-}
-
-header .scroll .navButton {
+#navButton {
   background-color: #1a8917;
   color: white;
 }
-.scroll-background {
-  background-color: white; /* Cambia il background del containerHh */
-}
+
 .navButton {
   border: none;
   border-radius: 50px;
@@ -63,11 +58,17 @@ header .scroll .navButton {
 }
 
 .hero {
-  width: 80%;
   margin-inline: auto;
   border-bottom: 1.5px solid black;
   display: flex;
+  justify-content: end;
+  margin-top: 100px;
+  background-color: #ffc017;
+}
+.heroContent {
+  display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 .heroText h1 {
@@ -219,7 +220,13 @@ header .scroll .navButton {
   position: relative;
   font-weight: 500;
 }
-.dateArt span {
+.articleSection {
+  border: 1 px solid grey;
+  background-color: rgb(218, 215, 215);
+  border-radius: 25%;
+  padding: 8px;
+}
+.bookmark {
   position: absolute;
   right: 20px;
 }

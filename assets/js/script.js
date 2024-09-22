@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
-  const containerHh = document.querySelector(".containerHh");
   const heroSection = document.querySelector(".hero");
   const heroHeight = heroSection.offsetHeight;
+  const navButton = document.querySelector(".navButton");
 
   window.addEventListener("scroll", () => {
     if (window.scrollY >= heroHeight) {
-      header.classList.add("scroll");
-      containerHh.classList.add("scroll-background");
+      header.id = "scroll";
+      navButton.id = "navButton";
     } else {
-      header.classList.remove("scroll");
-      containerHh.classList.remove("scroll-background");
+      header.id = "";
+      navButton.id = "";
     }
   });
 });
